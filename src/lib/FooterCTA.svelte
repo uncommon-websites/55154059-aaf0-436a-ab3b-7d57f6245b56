@@ -7,7 +7,7 @@
 		<!-- Generating a grid of placeholders -->
 		{#each Array(100) as _, i}
 			<div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center text-[10px] font-bold text-white">
-				{String.fromCharCode(65 + (i % 26))}
+				{["H", "P", "A", "I"][i % 4]}
 			</div>
 		{/each}
 	</div>
@@ -18,15 +18,15 @@
 
 	<div class="relative z-10 max-w-2xl mx-auto">
 		<h2 class="text-5xl font-serif text-gray-900 mb-8">
-			The CRM behind<br/>thousands of companies.
+			The Intelligence Layer behind<br/>thousands of hiring teams.
 		</h2>
 		
 		<div class="flex items-center justify-center gap-4">
 			<a href="#" class="bg-black text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
-				Start for free
+				Book a demo
 			</a>
 			<a href="#" class="text-sm font-medium text-gray-600 hover:text-black border border-gray-200 px-5 py-2.5 rounded-lg hover:border-gray-300 transition-colors">
-				Talk to sales
+				View Pricing
 			</a>
 		</div>
 	</div>

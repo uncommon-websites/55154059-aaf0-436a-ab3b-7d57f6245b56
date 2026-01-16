@@ -1,30 +1,30 @@
 <script lang="ts">
-	import { Mail, Calendar, Database, Activity, Search, Bell, CheckSquare, BarChart2, Zap, MoreHorizontal, Filter, RefreshCw, Plus } from 'lucide-svelte';
+	import { Phone, Calendar, Database, Activity, Search, Bell, CheckSquare, BarChart2, Zap, MoreHorizontal, Filter, RefreshCw, Plus, ShieldCheck } from 'lucide-svelte';
 </script>
 
 <section class="max-w-[1200px] mx-auto px-6 py-20 text-center">
 	<div class="max-w-3xl mx-auto mb-12">
 		<h2 class="text-4xl font-serif text-gray-900 mb-6">
-			Build fast. <span class="text-gray-500 font-sans text-xl font-normal block mt-4">Forget months of setup. Attio syncs immediately with your email and calendar, building a powerful CRM right before your eyes.</span>
+			Hire fast. <span class="text-gray-500 font-sans text-xl font-normal block mt-4">Forget fragmented tools. HiPeople syncs immediately with your ATS, building a powerful talent intelligence layer right before your eyes.</span>
 		</h2>
 		<button class="mt-8 px-5 py-2.5 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">
-			Start for free
+			Book a demo
 		</button>
 	</div>
 
 	<!-- Tabs -->
 	<div class="flex justify-center gap-4 mb-12">
 		<button class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-900 shadow-sm hover:bg-gray-50">
-			<Mail size={14} /> Email streams
+			<Phone size={14} /> AI Screening
 		</button>
 		<button class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-colors">
-			<Calendar size={14} /> Calendar events
+			<CheckSquare size={14} /> Assessments
 		</button>
 		<button class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-colors">
-			<Activity size={14} /> Digital exhaust
+			<ShieldCheck size={14} /> References
 		</button>
 		<button class="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-medium text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-colors">
-			<Database size={14} /> Data sources
+			<Database size={14} /> ATS Sync
 		</button>
 	</div>
 
@@ -34,11 +34,11 @@
 		<div class="h-14 border-b border-gray-200 flex items-center justify-between px-6 bg-white">
 			<div class="flex items-center gap-4">
 				<div class="w-8 h-8 rounded-full bg-gray-200 overflow-hidden">
-					<img src="https://i.pravatar.cc/150?u=5" alt="Sarah Johnson" class="w-full h-full object-cover"/>
+					<img src="https://i.pravatar.cc/150?u=8" alt="Candidate" class="w-full h-full object-cover"/>
 				</div>
 				<div>
-					<div class="text-sm font-semibold text-gray-900">Sarah Johnson</div>
-					<div class="text-xs text-gray-500">Head of IT at GreenLeaf Inc.</div>
+					<div class="text-sm font-semibold text-gray-900">Alex Rivera</div>
+					<div class="text-xs text-gray-500">Candidate for Senior Product Designer</div>
 				</div>
 			</div>
 			<div class="flex items-center gap-3">
@@ -51,22 +51,22 @@
 		<div class="flex h-[500px]">
 			<!-- Sidebar -->
 			<div class="w-64 border-r border-gray-200 bg-gray-50/30 p-4 flex flex-col gap-1">
-				<div class="text-[11px] font-medium text-gray-400 mb-2 uppercase tracking-wider">Details</div>
+				<div class="text-[11px] font-medium text-gray-400 mb-2 uppercase tracking-wider">Intelligence</div>
 				
 				<div class="grid grid-cols-[20px_1fr] gap-2 text-xs mb-4">
-					<div class="text-gray-400"><Mail size={14} /></div>
-					<div class="text-gray-900 truncate">sarah.johnson@greenleaf.com</div>
+					<div class="text-gray-400"><Phone size={14} /></div>
+					<div class="text-gray-900">Screened: 113 languages</div>
 					
-					<div class="text-gray-400"><Calendar size={14} /></div>
-					<div class="text-gray-900">Last met 2 days ago</div>
+					<div class="text-gray-400"><CheckSquare size={14} /></div>
+					<div class="text-gray-900">Assessment: 94% match</div>
 					
-					<div class="text-gray-400"><Database size={14} /></div>
-					<div class="text-gray-900">GreenLeaf Inc.</div>
+					<div class="text-gray-400"><ShieldCheck size={14} /></div>
+					<div class="text-gray-900">References: Verified</div>
 				</div>
 
-				<div class="text-[11px] font-medium text-gray-400 mb-2 uppercase tracking-wider mt-4">Lists</div>
+				<div class="text-[11px] font-medium text-gray-400 mb-2 uppercase tracking-wider mt-4">ATS Status</div>
 				<div class="flex items-center gap-2 text-xs text-gray-700 bg-white border border-gray-200 p-2 rounded shadow-sm">
-					<div class="w-2 h-2 rounded-full bg-green-500"></div> Sales Pipeline
+					<div class="w-2 h-2 rounded-full bg-green-500"></div> Greenhouse: Shortlisted
 				</div>
 			</div>
 
@@ -74,19 +74,19 @@
 			<div class="flex-1 bg-white p-6 overflow-y-auto">
 				<div class="flex items-center justify-between mb-6">
 					<h3 class="text-sm font-semibold text-gray-900 flex items-center gap-2">
-						<Activity size={16} /> Highlights
+						<Activity size={16} /> AI Screening Summary
 					</h3>
-					<button class="text-xs text-blue-600 font-medium">+ Add note</button>
+					<button class="text-xs text-blue-600 font-medium">View Transcript</button>
 				</div>
 
 				<!-- Highlight Card -->
 				<div class="bg-blue-50/50 border border-blue-100 rounded-lg p-4 mb-8">
 					<p class="text-sm text-gray-700 leading-relaxed">
-						Sarah joined the thread "Re: Q3 Roadmap Review". She mentioned they are looking for a new CRM solution and are evaluating competitors.
+						Alex demonstrated exceptional product thinking during the AI screening call. They discussed their experience scaling design systems at a high-growth startup and showed strong alignment with our technical requirements.
 					</p>
 					<div class="flex items-center gap-2 mt-3">
-						<div class="w-5 h-5 rounded-full bg-purple-100 flex items-center justify-center text-[10px] text-purple-600">AI</div>
-						<span class="text-xs text-gray-500">Summarized by Attio AI</span>
+						<div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[10px] text-blue-600 font-bold">AI</div>
+						<span class="text-xs text-gray-500">Summarized by HiPeople AI</span>
 					</div>
 				</div>
 
@@ -94,13 +94,13 @@
 				<div class="relative pl-4 border-l border-gray-200 space-y-8">
 					<!-- Event 1 -->
 					<div class="relative">
-						<div class="absolute -left-[21px] top-0 w-3 h-3 rounded-full bg-gray-200 border-2 border-white"></div>
+						<div class="absolute -left-[21px] top-0 w-3 h-3 rounded-full bg-green-500 border-2 border-white"></div>
 						<div class="flex items-start justify-between">
 							<div>
-								<div class="text-sm font-medium text-gray-900">Email sent: "Following up on our chat"</div>
-								<p class="text-xs text-gray-500 mt-1">Hey Sarah, great meeting you yesterday. As discussed...</p>
+								<div class="text-sm font-medium text-gray-900">Reference Check Completed</div>
+								<p class="text-xs text-gray-500 mt-1">3 references verified in 25 hours.</p>
 							</div>
-							<span class="text-xs text-gray-400">2 days ago</span>
+							<span class="text-xs text-gray-400">Today</span>
 						</div>
 					</div>
 
@@ -109,16 +109,12 @@
 						<div class="absolute -left-[21px] top-0 w-3 h-3 rounded-full bg-blue-500 border-2 border-white"></div>
 						<div class="flex items-start justify-between">
 							<div>
-								<div class="text-sm font-medium text-gray-900">Meeting: "Intro Call"</div>
+								<div class="text-sm font-medium text-gray-900">AI Screening Call Finished</div>
 								<div class="flex items-center gap-2 mt-1">
-									<div class="flex -space-x-1">
-										<div class="w-5 h-5 rounded-full bg-gray-200 border border-white"></div>
-										<div class="w-5 h-5 rounded-full bg-gray-300 border border-white"></div>
-									</div>
-									<span class="text-xs text-gray-500">3 attendees</span>
+									<span class="text-xs text-gray-500">Duration: 15 mins • Language: English</span>
 								</div>
 							</div>
-							<span class="text-xs text-gray-400">3 days ago</span>
+							<span class="text-xs text-gray-400">Yesterday</span>
 						</div>
 					</div>
 					
@@ -127,9 +123,9 @@
 						<div class="absolute -left-[21px] top-0 w-3 h-3 rounded-full bg-gray-200 border-2 border-white"></div>
 						<div class="flex items-start justify-between">
 							<div>
-								<div class="text-sm font-medium text-gray-900">Michael Chang added Sarah to "Sales Pipeline"</div>
+								<div class="text-sm font-medium text-gray-900">Application Received from Greenhouse</div>
 							</div>
-							<span class="text-xs text-gray-400">5 days ago</span>
+							<span class="text-xs text-gray-400">2 days ago</span>
 						</div>
 					</div>
 				</div>
