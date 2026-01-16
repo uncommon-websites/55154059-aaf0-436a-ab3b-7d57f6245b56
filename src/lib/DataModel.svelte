@@ -114,7 +114,7 @@
 						<span>Email Address</span>
 					</div>
 					<div class="flex items-center gap-2 text-xs text-gray-600">
-						<div class="w-4 h-4 flex items-center justify-center text-gray-400">🏢</div>
+						<Building2 size={14} class="text-gray-400" />
 						<span>Current Company</span>
 					</div>
 					<div class="text-[10px] text-gray-400 pl-6">+ 12 More Attributes</div>
